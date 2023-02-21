@@ -1,0 +1,204 @@
+@use "variables";
+
+.header {
+  padding-top: 18px;
+  padding-bottom: 19px;
+
+  &-logo {
+    line-height: 150%;
+    letter-spacing: 0.5em;
+  }
+}
+
+.section-hero {
+  &__header {
+    margin-bottom: 40px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+      font-size: 33px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 70px;
+      font-size: 48px;
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.heading {
+  font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.section-hero-desk {
+
+  &__text {
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: variables.$text;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__holder {
+    @media screen and (min-width: 768px){
+      max-width: 570px;
+    }
+  }
+}
+
+
+.pic {
+  max-width: 100%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.text {
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: variables.$text;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 19px;
+  }
+}
+
+
+.footer {
+  background: rgba(244, 244, 244, 1);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer__item, .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &_header {
+    font: 24px / 40px 'Red Hat Display', sans-serif;
+    margin-bottom: 20px;
+
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1280px) {
+      align-items: start;
+    }
+
+
+  }
+
+  a {
+    font: 18px / 30px;
+    display: block;
+  }
+
+  &_media {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 270px;
+    }
+  }
+
+  &_info {
+    font: 16px / 27px;
+    letter-spacing: 0.1em;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.footer-wrapper {
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+
+
+.rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid variables.$secondarySubColor;
+
+  &:hover {
+    background: variables.$secondarySubColor;
+    svg {
+      fill: white;
+    }
+  }
+
+  svg {
+    fill: $secondarySubColor;
+  }
+}

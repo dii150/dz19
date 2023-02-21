@@ -1,0 +1,44 @@
+@use "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px){
+    max-width: 768px;
+    padding: 0 35px;
+  }
+
+  @media screen and (min-width: 1280px){
+    max-width: 1440px;
+    padding: 0 135px;
+  }
+}
+
+.section {
+  margin-bottom: 70px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 90px;
+  }
+}

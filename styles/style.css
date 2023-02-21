@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 35px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 135px;
+  }
+}
+
+.section {
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    margin-bottom: 90px;
+  }
+}
+
+.header {
+  padding-top: 18px;
+  padding-bottom: 19px;
+}
+.header-logo {
+  line-height: 150%;
+  letter-spacing: 0.5em;
+}
+
+.section-hero__header {
+  margin-bottom: 40px;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 768px) {
+  .section-hero__header {
+    margin-bottom: 50px;
+    font-size: 33px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-hero__header {
+    margin-bottom: 70px;
+    font-size: 48px;
+  }
+}
+.section-hero__pic {
+  max-width: 100%;
+}
+.section-hero__pic img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .section-hero__pic {
+    margin-bottom: 20px;
+  }
+}
+
+.heading {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+}
+
+.section-hero-desk__text {
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+.section-hero-desk__text:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .section-hero-desk__holder {
+    max-width: 570px;
+  }
+}
+
+.pic {
+  max-width: 100%;
+}
+.pic img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .pic {
+    margin-bottom: 20px;
+  }
+}
+
+.text {
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+.text:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 19px;
+  }
+}
+
+.footer {
+  background: rgb(244, 244, 244);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer__item, .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item_header, .footer-wrapper_header {
+  font: 24px/40px "Red Hat Display", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__item_header, .footer-wrapper_header {
+    font-size: 48px;
+  }
+}
+.footer__item .contacts, .footer-wrapper .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1280px) {
+  .footer__item .contacts, .footer-wrapper .contacts {
+    align-items: start;
+  }
+}
+.footer__item a, .footer-wrapper a {
+  font: 18px/30px;
+  display: block;
+}
+.footer__item_media, .footer-wrapper_media {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .footer__item_media, .footer-wrapper_media {
+    max-width: 270px;
+  }
+}
+.footer__item_info, .footer-wrapper_info {
+  font: 16px/27px;
+  letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .footer__item_info, .footer-wrapper_info {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-wrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(86, 86, 86);
+}
+.rect:hover {
+  background: rgb(86, 86, 86);
+}
+.rect:hover svg {
+  fill: white;
+}
+.rect svg {
+  fill: rgb(86, 86, 86);
+}
+
+/*# sourceMappingURL=style.css.map */
